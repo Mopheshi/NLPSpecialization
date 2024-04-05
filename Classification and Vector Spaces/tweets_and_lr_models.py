@@ -74,7 +74,7 @@ ax.scatter(X[:, 1], X[:, 2], c=[colors[int(k)] for k in Y], s=0.1)  # Plot a dot
 plt.xlabel("Positive")
 plt.ylabel("Negative")
 
-# Now lets represent the logistic regression model in this chart.
+# Now let's represent the logistic regression model in this chart.
 maxpos = np.max(X[:, 1])
 
 offset = 5000  # The pos value for the direction vectors origin
