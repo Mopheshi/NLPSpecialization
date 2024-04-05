@@ -46,8 +46,8 @@ def build_freqs(tweets, ys):
     """Build frequencies.
     Input:
         tweets: a list of tweets
-        ys: an m x 1 array with the sentiment label of each tweet
-            (either 0 or 1)
+        ys: an m x Week 1 array with the sentiment label of each tweet
+            (either 0 or Week 1)
     Output:
         freqs: a dictionary mapping each (word, sentiment) pair to its
         frequency

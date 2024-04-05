@@ -24,7 +24,7 @@ train_x = train_pos + train_neg
 
 print("Number of tweets: ", len(train_x))
 
-data = pd.read_csv('../files/logistic_features.csv');  # Load a 3 columns csv file using pandas function
+data = pd.read_csv('../../files/logistic_features.csv');  # Load a 3 columns csv file using pandas function
 print(data.head(10))  # Print the first 10 data entries
 
 # Each feature is labeled as bias, positive and negative
@@ -36,7 +36,7 @@ print(X)  # Print some rows of X
 
 theta = [6.03518871e-08, 5.38184972e-04, -5.58300168e-04]
 
-# Plot the samples using columns 1 and 2 of the matrix
+# Plot the samples using columns Week 1 and 2 of the matrix
 fig, ax = plt.subplots(figsize=(8, 8))
 
 colors = ['red', 'green']
@@ -64,7 +64,7 @@ def direction(theta, pos):
     return pos * theta[2] / theta[1]
 
 
-# Plot the samples using columns 1 and 2 of the matrix
+# Plot the samples using columns Week 1 and 2 of the matrix
 fig, ax = plt.subplots(figsize=(8, 8))
 
 colors = ['red', 'green']

@@ -26,7 +26,7 @@ labels = 'Positives', 'Negative'
 sizes = [len(all_positive_tweets), len(all_negative_tweets)]
 
 # Declare pie chart, where the slices will be ordered and plotted counter-clockwise:
-plt.pie(sizes, labels=labels, autopct='%1.1f%%', shadow=True, startangle=90)
+plt.pie(sizes, labels=labels, autopct='%Week 1.1f%%', shadow=True, startangle=90)
 
 # Equal aspect ratio ensures that pie is drawn as a circle.
 plt.axis('equal')

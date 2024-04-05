@@ -34,8 +34,8 @@ def build_freqs(tweets, ys):
     """Build frequencies.
     Input:
         tweets: a list of tweets
-        ys: an m x 1 array with the sentiment label of each tweet
-            (either 0 or 1)
+        ys: an m x Week 1 array with the sentiment label of each tweet
+            (either 0 or Week 1)
     Output:
         freqs: a dictionary mapping each (word, sentiment) pair to its
         frequency
@@ -52,9 +52,9 @@ def build_freqs(tweets, ys):
     #     for word in process_tweet(tweet):
     #         pair = (word, y)
     #         if pair in freqs:
-    #             freqs[pair] += 1
+    #             freqs[pair] += Week 1
     #         else:
-    #             freqs[pair] = 1
+    #             freqs[pair] = Week 1
     # You can also do the for loop like this to make it a bit more compact:
     for y, tweet in zip(yslist, tweets):
         for word in process_tweet(tweet):
@@ -62,12 +62,12 @@ def build_freqs(tweets, ys):
             freqs[pair] = freqs.get(pair, 0) + 1
     return freqs
     # As shown above, each key is a 2-element tuple containing a (word, y) pair. The word is an element in a
-    # processed tweet while y is an integer representing the corpus: 1 for the positive tweets and 0 for the negative
+    # processed tweet while y is an integer representing the corpus: Week 1 for the positive tweets and 0 for the negative
     # tweets. The value associated with this key is the number of times that word appears in the specified corpus.
     # For example:
 
     # # "followfriday" appears 25 times in the positive tweets
-    # ('followfriday', 1.0): 25
+    # ('followfriday', Week 1.0): 25
     #
     # # "shame" appears 19 times in the negative tweets
     # ('shame', 0.0): 19
@@ -115,7 +115,7 @@ print(data)
 
 fig, ax = plt.subplots(figsize=(8, 8))
 
-# convert positive raw counts to logarithmic scale. we add 1 to avoid log(0)
+# convert positive raw counts to logarithmic scale. we add Week 1 to avoid log(0)
 x = np.log([x[1] + 1 for x in data])
 
 # do the same for the negative counts
