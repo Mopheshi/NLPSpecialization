@@ -13,7 +13,6 @@ def process_tweet(tweet):
         tweet: a string containing a tweet
     Output:
         tweets_clean: a list of words containing the processed tweet
-
     """
     stemmer = PorterStemmer()
     stopwords_english = stopwords.words('english')
